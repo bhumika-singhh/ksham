@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksham — Updates</title>
+    <style>
+        :root {
+            --bg-color: #F4F3EF;
+            --text-color: #1A1A1A;
+            --border-color: #A0A0A0;
+            --accent-red: #C84B31;
+            --accent-green: #4D774E;
+            --font-mono: 'Courier New', Courier, Courier Prime, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 720px;
+            margin: 0 auto 3rem auto;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-back a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+        }
+
+        .nav-back a:hover {
+            color: var(--accent-red);
+            border-bottom-color: var(--accent-red);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .update-card {
+            border: 1px solid var(--border-color);
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .update-meta {
+            font-size: 0.8rem;
+            color: var(--accent-red);
+            margin-bottom: 0.35rem;
+        }
+
+        .update-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .update-card p {
+            margin-bottom: 0.75rem;
+        }
+
+        .update-card ul {
+            margin: 0 0 0 1.25rem;
+        }
+
+        .update-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .update-card p:last-child,
+        .update-card li:last-child {
+            margin-bottom: 0;
+        }
+
+        .footnote {
+            max-width: 720px;
+            margin: 3rem auto 0 auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #555555;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.25rem;
+            }
+
+            header {
+                margin-bottom: 2rem;
+            }
+
+            .page-title {
+                font-size: 1.6rem;
+            }
+
+            .update-card {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">Ksham — the patience to return</div>
+        <div class="nav-back"><a href="index.html">back to timer</a></div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Updates</h1>
+        <p class="intro">What's new in Ksham. Newest first.</p>
+
+        <article class="update-card">
+            <div class="update-meta">16 July 2026</div>
+            <h2 class="update-title">Study without leaving the tab</h2>
+            <ul>
+                <li>Load PDFs and images into Ksham and read them in place — no tab switch, no alarm, and the timer keeps running.</li>
+                <li>Load as many as you like. Switch between them from the tab strip, add more mid-session, and remove any you're done with.</li>
+                <li>Your files never leave your device. Nothing is uploaded.</li>
+                <li>Your timer stays visible while you read.</li>
+            </ul>
+        </article>
+    </main>
+
+    <div class="footnote">
+        Got an idea, or something that annoyed you? <a href="index.html">Tell me</a> — updates come from real feedback.
+    </div>
+
+</body>
+</html>
