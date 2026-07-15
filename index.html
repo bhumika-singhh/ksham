@@ -660,7 +660,7 @@
                 Streak: 0 sessions <span style="font-size: 0.9rem; font-weight: normal; display: block; margin-top: 0.25rem;">of honest focus</span>
             </div>
 
-            <button class="btn-primary" onclick="openModal('endModal')">End Focus</button>
+            <button id="endBtn" class="btn-primary" onclick="endFocusSession()" disabled>End Focus</button>
         </section>
     </main>
 
@@ -1046,6 +1046,7 @@
             
             document.getElementById('startBtn').innerText = "Focusing...";
             document.getElementById('startBtn').disabled = true;
+            document.getElementById('endBtn').disabled = false;
             input.disabled = true;
             document.getElementById('stateIndicator').innerHTML = `State: Focusing on ${currentGoal}`;
 
@@ -1258,7 +1259,19 @@
             openModal('endModal');
         }
 
+        function endFocusSession() {
+            // Only a running session can be ended — otherwise there's nothing to be honest about.
+            if (!isActive) return;
+            openModal('endModal');
+        }
+
         function processSessionOutcome(success) {
+            // Guard against counting a session that was never actually run.
+            if (!isActive) {
+                closeModal('endModal');
+                return;
+            }
+
             if (success) {
                 currentStreak += 1;
                 showConfetti();
@@ -1288,6 +1301,7 @@
             
             document.getElementById('startBtn').innerText = "Start Focus";
             document.getElementById('startBtn').disabled = false;
+            document.getElementById('endBtn').disabled = true;
             document.getElementById('goalInput').disabled = false;
             document.getElementById('goalInput').value = "";
             document.getElementById('stateIndicator').innerHTML = "State: Idle";
