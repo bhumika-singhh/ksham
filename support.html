@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksham — Support</title>
+    <style>
+        :root {
+            --bg-color: #F4F3EF;
+            --text-color: #1A1A1A;
+            --border-color: #A0A0A0;
+            --accent-red: #C84B31;
+            --accent-green: #4D774E;
+            --font-mono: 'Courier New', Courier, Courier Prime, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 620px;
+            margin: 0 auto 3rem auto;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-back a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+        }
+
+        .nav-back a:hover {
+            color: var(--accent-red);
+            border-bottom-color: var(--accent-red);
+        }
+
+        main {
+            max-width: 620px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .blurb {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .support-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.35rem;
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .support-option:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        .support-option .emoji {
+            font-size: 2rem;
+        }
+
+        .support-option .label {
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+
+        .support-option .note {
+            font-size: 0.85rem;
+            opacity: 0.75;
+        }
+
+        .footnote {
+            font-size: 0.85rem;
+            color: #555555;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.25rem;
+            }
+
+            header {
+                margin-bottom: 2rem;
+            }
+
+            .page-title {
+                font-size: 1.6rem;
+            }
+
+            .support-option {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">Ksham — the patience to return</div>
+        <div class="nav-back"><a href="index.html">back to timer</a></div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Support Ksham</h1>
+        <p class="blurb">Ksham is free, and it always will be. If it helped you sit down and do the thing, you can water it a little — every cup means the world.</p>
+
+        <div class="options">
+            <a href="https://ko-fi.com/bhumika_singh" target="_blank" rel="noopener" class="support-option">
+                <span class="emoji">&#9749;</span>
+                <span class="label">Buy me a coffee</span>
+            </a>
+            <a href="https://buymeachai.in/bhumikasingh" target="_blank" rel="noopener" class="support-option">
+                <span class="emoji">&#127861;</span>
+                <span class="label">Buy me a chai</span>
+                <span class="note">upi</span>
+            </a>
+        </div>
+
+        <p class="footnote">Thank you for believing in the idea and helping it grow. love, bhumi xx</p>
+    </main>
+
+</body>
+</html>

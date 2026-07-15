@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksham — Blog</title>
+    <style>
+        :root {
+            --bg-color: #F4F3EF;
+            --text-color: #1A1A1A;
+            --border-color: #A0A0A0;
+            --accent-red: #C84B31;
+            --accent-green: #4D774E;
+            --font-mono: 'Courier New', Courier, Courier Prime, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 760px;
+            margin: 0 auto 3rem auto;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-back a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+        }
+
+        .nav-back a:hover {
+            color: var(--accent-red);
+            border-bottom-color: var(--accent-red);
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-title {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-meta {
+            font-size: 0.85rem;
+            color: #555555;
+            margin-bottom: 2.5rem;
+        }
+
+        .lede {
+            font-size: 1.15rem;
+            border-left: 2px solid var(--accent-red);
+            padding-left: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 2.5rem 0 1rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: bold;
+            margin: 1.75rem 0 0.75rem 0;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        ul, ol {
+            margin: 0 0 1.25rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .pullquote {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.05rem;
+        }
+
+        .signoff {
+            margin-top: 2.5rem;
+            font-style: italic;
+            color: var(--accent-red);
+        }
+
+        footer {
+            max-width: 760px;
+            margin: 4rem auto 0 auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: #555555;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.25rem;
+            }
+
+            header {
+                margin-bottom: 2rem;
+            }
+
+            .post-title {
+                font-size: 1.6rem;
+            }
+
+            .lede {
+                font-size: 1.05rem;
+            }
+
+            .pullquote {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">Ksham — the patience to return</div>
+        <div class="nav-back"><a href="index.html">back to timer</a></div>
+    </header>
+
+    <article>
+        <h1 class="post-title">The patience to return</h1>
+        <div class="post-meta">Why I built Ksham</div>
+
+        <p class="lede">Ksham isn't really a timer. It's a small practice in being honest with yourself — and a quiet belief that focus isn't something an app can force on you, only something you can choose. The name means forgiveness: the kind you give yourself when you drift, and come back anyway.</p>
+
+        <h2>What I actually believe</h2>
+        <p>Distraction isn't the problem. It's a symptom. You don't lose focus because a tab is open — you open the tab because you're bored, or anxious, or you don't know where to begin. Most focus apps treat the symptom: they lock you out, block the sites, hide the apps, and quietly assume you can't be trusted. I didn't want to build another cage. I wanted to build something that trusts you, and helps you slowly become someone who deserves that trust.</p>
+        <p>And here's the honest part I kept circling back to: I can't actually watch you. A website can't follow you to your phone or your second screen — and it shouldn't want to. So Ksham doesn't pretend to police you. It does one small, honest thing: it asks you to show up, and it trusts you to tell the truth about whether you did. Everything real about Ksham happens in <em>you</em>, not on the screen. The idea lives outside the computer.</p>
+
+        <h2>The four things Ksham is built on</h2>
+        <p>Everything in Ksham comes back to four ideas. They are the whole point — the timer, the streak, the bell are just how they show up.</p>
+
+        <h3>Honesty</h3>
+        <p>Ksham has no way to check whether you actually worked. When it asks "did you actually do it?", only you know the answer. That's on purpose. The entire thing runs on your word — because learning to be honest with yourself, especially when no one is watching, is the muscle worth building.</p>
+
+        <h3>Responsibility</h3>
+        <p>Naming one thing and choosing to stay with it is a small act of ownership. Every session is a rep. Do it enough times and the responsibility isn't coming from the app anymore — it's coming from you. Ksham just holds the space for you to practice keeping your word to yourself.</p>
+
+        <h3>Respect</h3>
+        <p>Ksham treats you like an adult, not a child to be managed. It won't lock your phone or shame your choices. It respects that you're capable, that you genuinely want to do good work, and that sometimes you just get stuck — and getting stuck was never a character flaw.</p>
+
+        <h3>Forgiveness</h3>
+        <p>This is what the name means. When you wander off, Ksham doesn't punish you — it calls you back. When you break your streak honestly, it doesn't scold you; it says "it's okay, try again." Because the point was never to never fall. The point is the patience to return.</p>
+
+        <h2>How this shows up</h2>
+        <p>You name the one thing you'll do. You stay with it. If you wander off, Ksham rings a bell to call you back — not to trap you, just to remind you where you meant to be. And when the time is up, it asks the only question that matters: did you actually do it? An honest yes grows your streak of honest focus. An honest no resets it, gently, and you begin again. That's the whole loop. It's small on purpose.</p>
+
+        <div class="pullquote">Most apps assume you are the problem. They lock your phone, hide your icons, and treat you like a child. Ksham assumes you are simply stuck — and that you'll come back if it lets you. It doesn't block the distraction; it helps you remember why you sat down in the first place.</div>
+
+        <p>I didn't build Ksham to make you more productive. I built it because I think focus is really about honesty, and honesty is really about respect — for your time, your work, and the person you're trying to become. If it helps you sit down, be honest, and come back gently when you drift, then it did exactly what I hoped.</p>
+
+        <p class="signoff">love, bhumi xx</p>
+    </article>
+
+    <footer>
+        Ksham — the patience to return.
+    </footer>
+
+</body>
+</html>

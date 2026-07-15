@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksham — How it works</title>
+    <style>
+        :root {
+            --bg-color: #F4F3EF;
+            --text-color: #1A1A1A;
+            --border-color: #A0A0A0;
+            --accent-red: #C84B31;
+            --accent-green: #4D774E;
+            --font-mono: 'Courier New', Courier, Courier Prime, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 760px;
+            margin: 0 auto 3rem auto;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-back a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 2px;
+            font-size: 0.9rem;
+        }
+
+        .nav-back a:hover {
+            color: var(--accent-red);
+            border-bottom-color: var(--accent-red);
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+            min-width: 2.5rem;
+            color: var(--accent-red);
+        }
+
+        .step-body h2 {
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-body p {
+            margin: 0;
+        }
+
+        .step-body .why {
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--accent-red);
+        }
+
+        .footnote {
+            max-width: 760px;
+            margin: 3rem auto 0 auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #555555;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.25rem;
+            }
+
+            header {
+                margin-bottom: 2rem;
+            }
+
+            .page-title {
+                font-size: 1.6rem;
+            }
+
+            .step {
+                gap: 1rem;
+                padding: 1.25rem 0;
+            }
+
+            .step-number {
+                font-size: 1.2rem;
+                min-width: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">Ksham — the patience to return</div>
+        <div class="nav-back"><a href="index.html">back to timer</a></div>
+    </header>
+
+    <main>
+        <h1 class="page-title">How it works</h1>
+        <p class="intro">Ksham is small on purpose. Underneath the timer there's really just a practice: name one thing, stay with it, be honest about it, and come back gently when you drift. Here's how that works — and what each step is quietly about.</p>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-body">
+                <h2>Name the one thing</h2>
+                <p>Type the single task you'll do right now. You can't start a session until you've named it. Then choose a length — 5, 25, 45, or 60 minutes.</p>
+                <span class="why">Honesty. Focus starts with being clear about what you're actually here to do — not a vague "be productive."</span>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-body">
+                <h2>Start the focus</h2>
+                <p>Press Start Focus and the timer begins counting down. Your goal stays pinned on screen, so you always know what "focus" means right now.</p>
+                <span class="why">Respect. Your time matters, and the goal on screen is the promise you just made to yourself.</span>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-body">
+                <h2>Stay on the tab</h2>
+                <p>If you drift away, Ksham notices the one thing it honestly can — that you've left — and rings to call you back: the screen turns red, an alarm loops, and the state reads "CRISIS — FIX THE ENGINES." It never blocks the other tab or traps you. It just refuses to let you wander off without noticing.</p>
+                <span class="why">A bell, not a cage. Ksham can't police you, and doesn't try to. It only asks you to come back.</span>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-body">
+                <h2>Return</h2>
+                <p>Come back to the tab and everything settles — the screen flashes green, the alarm stops, and the countdown picks up exactly where it left off. There's no penalty for having left.</p>
+                <span class="why">Forgiveness. Drifting is human. Returning is the whole point — it's what the name means.</span>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-body">
+                <h2>Answer honestly</h2>
+                <p>When the timer hits zero, Ksham asks one question: "Did you actually do it?" Nothing verifies your answer. Say yes and your streak grows, with a burst of confetti. Say no and it resets — no shame, Ksham just tells you it's okay to try again.</p>
+                <span class="why">Honesty &amp; responsibility. The truth is yours alone to tell. That's exactly where it counts.</span>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-body">
+                <h2>Build the streak</h2>
+                <p>Every honest yes adds a session to your streak of honest focus. A session in progress is saved automatically, so if you close the tab or refresh, Ksham restores the timer — right where you left it.</p>
+                <span class="why">The practice compounds. Do the loop enough times and you're not just focusing — you're becoming someone who keeps their word to themselves.</span>
+            </div>
+        </div>
+    </main>
+
+    <div class="footnote">
+        Four ideas hold it all together — honesty, responsibility, respect, and forgiveness. Everything else is just a timer.
+    </div>
+
+</body>
+</html>
